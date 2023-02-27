@@ -1,0 +1,75 @@
+.body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.car-type{
+    color: hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display;
+    font-size: 35px;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    width: 230px;
+    padding: 2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    width: 230px;
+    padding: 2rem;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    width: 230px;
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.car-desc{
+    width: 210px;
+    font-size: 15px;
+    font-family: Lexend Deca;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+button{
+    background-color: hsla(0, 0%, 100%, 0.75);
+    border: none;
+    padding: 1rem;
+    border-radius: 25px;
+    width: 150px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+button:active{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-style: groove;
+    transition: 0.25s;
+}
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+.btn2{
+    color:hsl(184, 100%, 22%)
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width: 600px){
+    .body{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sedans{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
